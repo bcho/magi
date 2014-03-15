@@ -97,4 +97,4 @@ opcode (4 bits)        address (4 bits)
 
 ## Notes
 
-Instructions design was inspired by [Mannie's tutorial](http://minnie.tuhs.org/CompArch/Tutes/).
+Instructions design was inspired by [Warren Toomey's tutorial](http://minnie.tuhs.org/CompArch/Tutes/).
