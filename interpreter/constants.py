@@ -19,7 +19,7 @@ class OP(Enum):
     add = 0x1000
     sub = 0x1001
     and_ = 0x1010
-    or_ = 0x1011
+    xor = 0x1011
 
     je = 0x1100
     jne = 0x1101

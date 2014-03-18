@@ -58,7 +58,7 @@ opcode (4 bits)        address (4 bits)
 | add | 1000 | add %ax, %bx; | %ax <- %ax + %bx |
 | sub | 1001 | sub %ax, %bx; | %ax <- %ax - %bx |
 | and | 1010 | and %ax, %bx; | %ax <- %ax & %bx (bitwise) |
-| or | 1011 | or %ax, %bx; | %ax <- %ax | %bx (bitwise) |
+| xor | 1011 | xor %ax, %bx; | %ax <- %ax ^ %bx (bitwise) |
 | je | 1100 | je %ax, $imm; | PC <- $imm if %ax == 0 |
 | jne | 1100 | jne %ax, $imm; | PC <- $imm if %ax != 0 |
 | jg | 1100 | jg %ax, $imm; | PC <- $imm if %ax > 0 |
