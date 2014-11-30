@@ -16,7 +16,7 @@ Base Instruction:
 |  |  |  |  |  |  |  |  |
 +--+--+--+--+--+--+--+--+
 
-  op1   op2   Rsrc  Rdest
+  op1   op2   Rdest Rsrc
 
 Immediate Instruction (optional):
 
@@ -38,7 +38,7 @@ Immediate Instruction (optional):
 |  |  |  |  |  |  |  |  |
 +--+--+--+--+--+--+--+--+
  
- op1   op2  |  Rsrc  Rdest    $Immediate
+ op1   op2  |  Rdest  Rsrc   $Immediate
 
 opcode (4 bits)        address (4 bits)
 ```
@@ -60,9 +60,9 @@ opcode (4 bits)        address (4 bits)
 | and | 1010 | and %ax, %bx; | %ax <- %ax & %bx (bitwise) |
 | xor | 1011 | xor %ax, %bx; | %ax <- %ax ^ %bx (bitwise) |
 | je | 1100 | je %ax, $imm; | PC <- $imm if %ax == 0 |
-| jne | 1100 | jne %ax, $imm; | PC <- $imm if %ax != 0 |
-| jg | 1100 | jg %ax, $imm; | PC <- $imm if %ax > 0 |
-| jl | 1100 | jl %ax, $imm; | PC <- $imm if %ax < 0 |
+| jne | 1101 | jne %ax, $imm; | PC <- $imm if %ax != 0 |
+| jg | 1110 | jg %ax, $imm; | PC <- $imm if %ax > 0 |
+| jl | 1111 | jl %ax, $imm; | PC <- $imm if %ax < 0 |
 
 
 ## Registers
